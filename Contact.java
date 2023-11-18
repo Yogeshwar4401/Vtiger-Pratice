@@ -74,6 +74,10 @@ public class Contact {
 		driver.findElement(By.name("firstname")).sendKeys(FirstName);
 		driver.findElement(By.name("lastname")).sendKeys(LastName);
 		
+		// To notifyOwner check box
+		driver.findElement(By.name("notify_owner")).cilck();
+		
+		
 		//to click on group radio button
 		driver.findElement(By.xpath("(//input[@name='assigntype'])[2]")).click();
 		//drop down Webelement
